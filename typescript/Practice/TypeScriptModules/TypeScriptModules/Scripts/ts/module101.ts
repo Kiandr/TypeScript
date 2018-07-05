@@ -1,23 +1,21 @@
 ﻿/// <reference path="../typings/jquery/jquery.d.ts" />
 /// <reference path="../typings/toastr/toastr.d.ts" />
-interface ITest
-{
-    areName: string;
-    run():void;    
+interface IPoint {
+    getDistance() : number;
 }
 
-class Test implements ITest {
-    areName: string;
-    /*rivate _areName: string;*/
 
-    constructor(areaName: string) {
-         this.areName = areaName;
+class Point implements IPoint {
+    protected x: number;
+    protected y: number;
+
+    constructor(x: number, y: number) {
+        this.x = x;
+        this.y = y;
     }
-
-    run() {
-        //throw new Error("Method not implemented.");
-        toastr.success("Successfull Start");
-    }
-
+    getDistance() {return Math.sqrt( (this.x, this.y *this.y))}
 }
 
+var p: IPoint = new Point(4, 3);
+var dist = p.getDistance();
+toastr.info(`distance${dist}`);

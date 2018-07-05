@@ -1,14 +1,8 @@
 /// <reference path="../typings/jquery/jquery.d.ts" />
 /// <reference path="../typings/toastr/toastr.d.ts" />
-var Test = /** @class */ (function () {
-    /*rivate _areName: string;*/
-    function Test(areaName) {
-        this.areName = areaName;
+var Point = /** @class */ (function () {
+    function Point() {
     }
-    Test.prototype.run = function () {
-        //throw new Error("Method not implemented.");
-        toastr.success("Successfull Start");
-    };
-    return Test;
+    return Point;
 }());
 //# sourceMappingURL=module101.js.map
