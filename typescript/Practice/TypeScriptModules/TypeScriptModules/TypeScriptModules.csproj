@@ -282,6 +282,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\ts\module101.ts" />
     <TypeScriptCompile Include="Scripts\ts\module102.ts" />
+    <TypeScriptCompile Include="Scripts\ts\Module103.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\toastr\toastr.d.ts" />
   </ItemGroup>
